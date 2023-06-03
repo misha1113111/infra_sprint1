@@ -1,13 +1,10 @@
 server {
     server_name  studypyth.zapto.org;
 
-    # Новый блок.
     location /api/ {
-        # Эта команда определяет, куда нужно перенаправить запрос.
         proxy_pass http://127.0.0.1:8000;
     }
     
-     # Новый блок.
     location /admin/ {
         proxy_pass http://127.0.0.1:8000;
     }
